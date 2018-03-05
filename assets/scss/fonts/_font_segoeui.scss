@@ -1,0 +1,37 @@
+$rb-font-path: '../fonts' !default;
+
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("#{$rb-font-path}/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("#{$rb-font-path}/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("#{$rb-font-path}/SegoeUI/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("#{$rb-font-path}/SegoeUI/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("#{$rb-font-path}/SegoeUI/SegoeUIBold/SegoeUIBold.eot");
+  src: url("#{$rb-font-path}/SegoeUI/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("#{$rb-font-path}/SegoeUI/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("#{$rb-font-path}/SegoeUI/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SegoeUIItalic";
+  src: url("#{$rb-font-path}/SegoeUI/SegoeUIItalic/SegoeUIItalic.eot");
+  src: url("#{$rb-font-path}/SegoeUI/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("#{$rb-font-path}/SegoeUI/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("#{$rb-font-path}/SegoeUI/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SegoeUILight";
+  src: url("#{$rb-font-path}/SegoeUI/SegoeUILight/SegoeUILight.eot");
+  src: url("#{$rb-font-path}/SegoeUI/SegoeUILight/SegoeUILight.eot?#iefix") format("embedded-opentype"), url("#{$rb-font-path}/SegoeUI/SegoeUILight/SegoeUILight.woff") format("woff"), url("#{$rb-font-path}/SegoeUI/SegoeUILight/SegoeUILight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "SegoeUISemiBold";
+  src: url("#{$rb-font-path}/SegoeUI/SegoeUISemiBold/SegoeUISemiBold.eot");
+  src: url("#{$rb-font-path}/SegoeUI/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix") format("embedded-opentype"), url("#{$rb-font-path}/SegoeUI/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"), url("#{$rb-font-path}/SegoeUI/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}

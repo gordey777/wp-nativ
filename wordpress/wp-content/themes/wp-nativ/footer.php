@@ -113,6 +113,7 @@
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js" type="text/javascript"></script>
     <?php wp_footer(); ?>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 </body>
 </html>

@@ -607,7 +607,7 @@ header {
 
   min-height: 600px;
   margin-bottom: 50px;
-/*   .owl-stage-outer,
+  /*   .owl-stage-outer,
 .owl-stage {
   display: inline-block;
 
@@ -622,6 +622,7 @@ header {
   .slide {
     display: inline-block;
 
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     padding-bottom: 100px;
@@ -1309,6 +1310,8 @@ section {
 }
 
 #cont-form {
+  position: relative;
+
   padding: 45px 0 60px 0;
 
   color: #fff;
@@ -1320,6 +1323,8 @@ section {
   .text-input,
   .textarea {
     margin-bottom: 20px;
+
+    color: #000;
   }
   .acceptance-1,
   .acceptance-2 {
@@ -1368,6 +1373,25 @@ footer {
 
   background-color: $gray-light;
 }
+
+.wpcf7-response-output {
+  font-weight: 600;
+
+  position: absolute;
+
+  width: auto;
+  margin: auto;
+  padding: 30px;
+
+  text-align: center;
+
+  color: #fff;
+  background-color: rgba(0,0,0, .7);
+}
+
+
+
+
 
 //modals
 #my-cart-modal {
@@ -1713,6 +1737,11 @@ footer {
 .scroll_top {
   opacity: 0;
 }
+
+
+
+
+
 
 
 //@import 'fonts/font_roboto';

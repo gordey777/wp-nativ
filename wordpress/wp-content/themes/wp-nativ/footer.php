@@ -6,7 +6,7 @@
   <div class="inner">
 
     <p class="copyright">
-      Nativ &copy; <?php echo date("Y"); ?> <?php the_field('footer_cop'); ?>.
+      <?php the_field('footer_cop'); ?>
     </p><!-- /copyright -->
 
   </div><!-- /.inner -->
@@ -89,7 +89,7 @@
 
 
 <?php if (get_field('rules')) { ?>
-      <div class="modal fade modal-product" id="#mod__acceptance" tabindex="-1">
+      <div class="modal fade modal-product" id="mod__acceptance" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content product">
             <div class="modal-header">
@@ -104,13 +104,6 @@
         </div>
       </div>
 <?php } ?>
-
-
-
-
-
-
-
 
 
 

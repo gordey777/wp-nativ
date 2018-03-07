@@ -10041,6 +10041,7 @@ header .header-line.stick .logo img {
 
 #main-slider .slide {
   display: inline-block;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   padding-bottom: 100px;
@@ -10639,6 +10640,7 @@ section h2 {
 }
 
 #cont-form {
+  position: relative;
   padding: 45px 0 60px 0;
   color: #fff;
   background: url("../img/contacts-bg.jpg") no-repeat center center;
@@ -10652,6 +10654,7 @@ section h2 {
 #cont-form .text-input,
 #cont-form .textarea {
   margin-bottom: 20px;
+  color: #000;
 }
 
 #cont-form .acceptance-1,
@@ -10691,6 +10694,17 @@ footer {
   padding: 45px 0;
   text-align: center;
   background-color: #d2d2d2;
+}
+
+.wpcf7-response-output {
+  font-weight: 600;
+  position: absolute;
+  width: auto;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #my-cart-modal h2 {

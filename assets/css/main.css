@@ -9557,6 +9557,10 @@ h6 {
   margin: 0 0 0.6em;
 }
 
+em {
+  font-style: italic;
+}
+
 p,
 pre {
   margin: 0 0 0.6em;
@@ -10025,6 +10029,10 @@ header .header-line.stick .logo img {
   position: relative;
   min-height: 600px;
   margin-bottom: 50px;
+  background-image: url("../img/slide-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   /*   .owl-stage-outer,
 .owl-stage {
   display: inline-block;
@@ -10051,7 +10059,8 @@ header .header-line.stick .logo img {
   background-size: cover;
 }
 
-#main-slider .slide h2 {
+#main-slider .slide h2,
+#main-slider .slide h3 {
   font-size: 40px;
   display: inline-block;
   width: 100%;
@@ -10062,12 +10071,18 @@ header .header-line.stick .logo img {
 }
 
 #main-slider .slide h2 b,
-#main-slider .slide h2 strong {
+#main-slider .slide h2 strong,
+#main-slider .slide h3 b,
+#main-slider .slide h3 strong {
   color: #a4d300;
 }
 
+#main-slider .slide h3 {
+  font-size: 30px;
+}
+
 #main-slider .slide .slide-img {
-  overflow: auto;
+  overflow: visible;
   height: 420px;
   margin-top: 60px;
   text-align: center;
@@ -10077,25 +10092,12 @@ header .header-line.stick .logo img {
 }
 
 #main-slider .slide .slide-img img {
-  width: auto;
-  max-height: 100%;
+  display: inline-block;
+  margin: auto;
 }
 
 #main-slider .slide .slide-prod {
   padding-top: 60px;
-}
-
-#main-slider .slide .slide-subtitle {
-  font-size: 25px;
-}
-
-#main-slider .slide .timer_wrapp {
-  display: inline-block;
-  margin-bottom: 35px;
-  padding-top: 60px;
-  padding-right: 0;
-  padding-left: 0;
-  text-align: right;
 }
 
 #main-slider .slide .slide-timer {
@@ -10209,6 +10211,30 @@ header .header-line.stick .logo img {
 
 #main-slider .slide .slide_desc {
   font-size: 28px;
+}
+
+#main-slider .slide-prod-wrap {
+  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-bottom: 35px;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+#main-slider .slide-prod-wrap .slide-subtitle {
+  font-size: 25px;
+  display: inline-block;
+}
+
+#main-slider .slide-prod-wrap .timer_wrapp {
+  display: inline-block;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: right;
 }
 
 #main-slider .owl-dots {
@@ -10667,6 +10693,7 @@ section h2 {
 #cont-form .acceptance-2 span.wpcf7-list-item {
   display: inline-block;
   margin-left: 0;
+  color: #fff;
 }
 
 #cont-form .acceptance-label {
@@ -10837,6 +10864,32 @@ footer {
   font-size: 30px;
   padding: 30px;
   color: #174a5f;
+}
+
+#my-cart-modal .acceptance-1,
+#my-cart-modal .acceptance-2 {
+  display: inline-block;
+  float: left;
+}
+
+#my-cart-modal .acceptance-1 span.wpcf7-list-item,
+#my-cart-modal .acceptance-2 span.wpcf7-list-item {
+  display: inline-block;
+  margin-left: 0;
+  color: #fff;
+}
+
+#my-cart-modal .acceptance-label {
+  font-weight: 200;
+  display: inline-block;
+  float: left;
+  color: #fff;
+}
+
+#my-cart-modal .acceptance-label a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #fff;
 }
 
 .modal-product .best-seler {
@@ -11121,6 +11174,12 @@ footer {
 .quantity-nav .quantity-button.quantity-down {
   right: auto;
   left: 0;
+}
+
+@media (mix-width: 992px) {
+  #main-slider .slide-prod-wrap {
+    min-height: 250px;
+  }
 }
 
 @media (max-width: 1280px) {

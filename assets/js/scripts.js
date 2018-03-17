@@ -2137,8 +2137,8 @@ $(function() {
     //stagePadding:30,
     smartSpeed: 1000,
     //autoHeight: true,
-    animateIn: 'fadeIn',
-    //animateOut: 'fadeOut'
+    //animateIn: 'fadeIn',
+    animateOut: 'fadeOut'
   });
 
   var owlDotsW = $('#main-slider .owl-dots').width();
@@ -2176,6 +2176,7 @@ $(function() {
 
 
   }, false);
+
 
 
 

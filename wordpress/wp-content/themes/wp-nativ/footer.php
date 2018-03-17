@@ -105,6 +105,23 @@
       </div>
 <?php } ?>
 
+<?php if (get_field('buy_rules')) { ?>
+      <div class="modal fade modal-product" id="buy_rules" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content product">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal" aria-label="Close">×</button>
+            </div>
+            <div class="modal-body row">
+              <div class="col-md-12">
+                  <?php the_field('buy_rules'); ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<?php } ?>
+
 
 
 

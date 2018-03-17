@@ -33,43 +33,45 @@
                 <!-- <img src="<?php //echo $image['url']; ?>" alt="<?php //the_title(); ?>" /> -->
                 <?php //} ?>
               </div>
-
               <div class="col-xs-7 slide-prod">
-
-                <div class="slide-subtitle"><?php the_sub_field('slogan'); ?></div>
-                <?php if ( get_sub_field('timer_switch') ) { ?>
-                  <div class="timer_wrapp col-lg-10 col-lg-offset-1">
-                    <div id="clockdiv-<?php  echo $i;?>" class="slide-timer" data-timer="<?php echo $dataTimer;?>">
-                      <div class="sale"><?php the_sub_field('sale_text'); ?></div>
-                      <div class="timer-item">
-                        <span class="days"></span>
-                        <div class="smalltext">
-                          <?php echo $timer[0]["time_label"];?>
+                <?php if ( get_sub_field('slogan') || get_sub_field('timer_switch')) { ?>
+                  <div class="slide-prod-wrap">
+                    <?php if ( get_sub_field('slogan') ) { ?>
+                      <div class="slide-subtitle"><?php the_sub_field('slogan'); ?></div>
+                    <?php } ?>
+                    <?php if ( get_sub_field('timer_switch') ) { ?>
+                      <div class="timer_wrapp col-lg-10 col-lg-offset-1">
+                        <div id="clockdiv-<?php  echo $i;?>" class="slide-timer" data-timer="<?php echo $dataTimer;?>">
+                          <div class="sale"><?php the_sub_field('sale_text'); ?></div>
+                          <div class="timer-item">
+                            <span class="days"></span>
+                            <div class="smalltext">
+                              <?php echo $timer[0]["time_label"];?>
+                            </div>
+                          </div>
+                          <div class="timer-item">
+                            <span class="hours"></span>
+                            <div class="smalltext">
+                              <?php echo $timer[1]["time_label"];?>
+                            </div>
+                          </div>
+                          <div class="timer-item">
+                            <span class="minutes"></span>
+                            <div class="smalltext">
+                              <?php echo $timer[2]["time_label"];?>
+                            </div>
+                          </div>
+                          <div class="timer-item">
+                            <span class="seconds"></span>
+                            <div class="smalltext">
+                              <?php echo $timer[3]["time_label"];?>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="timer-item">
-                        <span class="hours"></span>
-                        <div class="smalltext">
-                          <?php echo $timer[1]["time_label"];?>
-                        </div>
-                      </div>
-                      <div class="timer-item">
-                        <span class="minutes"></span>
-                        <div class="smalltext">
-                          <?php echo $timer[2]["time_label"];?>
-                        </div>
-                      </div>
-                      <div class="timer-item">
-                        <span class="seconds"></span>
-                        <div class="smalltext">
-                          <?php echo $timer[3]["time_label"];?>
-                        </div>
-                      </div>
-                    </div>
+                    <?php } ?>
                   </div>
-
                 <?php } ?>
-
 
                 <?php if ( get_field('price', $slide_product) ) { ?>
                   <div class="price_wrapp col-md-10 col-md-offset-1">

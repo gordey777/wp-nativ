@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - EWWW Image Optimizer - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-10-17 14:57:39+0000\n"
+"PO-Revision-Date: 2018-03-06 11:21:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,58 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - EWWW Image Optimizer - Stable (latest release)\n"
+
+#: common.php:7626
+msgid "Background mode active, enable Parallel Optimization in Advanced Settings"
+msgstr "Mode en arrière-plan actif, activer l'Optimisation Parallèle dans les réglages avancés"
+
+#: common.php:7912
+msgid "Remove Rewrite Rules"
+msgstr "Supprimer les règles de réécriture"
+
+#: common.php:7105
+msgid "Removal failed"
+msgstr "La suppression a échouée"
+
+#: common.php:7103
+msgid "Removal successful"
+msgstr "Suppression réussie"
+
+#: common.php:1862
+msgid "New thumbnails will be optimized by the EWWW Image Optimizer as they are generated. You may wish to disable the plugin and run a bulk optimize later to speed up the process."
+msgstr "Les nouvelles miniatures seront optimisées par EWWW Image Optimizer au fur et à mesure qu’elles seront générées. Vous souhaiterez peut-être désactiver l’extension et exécuter une optimisation en masse plus tard pour accélérer le processus."
+
+#: common.php:7950
+msgid "Add ExactDN to increase website speeds dramatically!"
+msgstr "Ajoutez ExactDN pour augmenter considérablement la vitesse du site !"
+
+#: common.php:8218
+msgid "The Debug Log is empty."
+msgstr "Le journal de débogage est vide."
+
+#: common.php:7949
+msgid "Resize"
+msgstr "redimensionner"
+
+#: common.php:7948
+msgid "Compress"
+msgstr "Compresser"
+
+#: common.php:7947
+msgid "Signup for premium image optimization:"
+msgstr "Inscrivez-vous pour une optimisation d’image supérieure :"
+
+#: common.php:3610
+msgid "no credits remaining, please purchase more."
+msgstr "aucun crédit restant, veuillez en racheter."
+
+#: common.php:2426
+msgid "EWWW IO Debug Log"
+msgstr "EWWW IO journal de débogage"
+
+#: bulk.php:112
+msgid "Previously optimized images will be skipped by default, check this box before scanning to override."
+msgstr "Par défaut, les images précédemment optimisées seront ignorées. Pour passer outre, cochez cette case avant d’appuyer sur le bouton."
 
 #: common.php:7818
 msgid "Resizes images uploaded indirectly to the Media Library, like theme images or front-end uploads. Also applied to existing images during Bulk Optimization if necessary."
@@ -35,6 +87,10 @@ msgstr "En apprendre plus à propos d’ExactDN."
 msgid "Adjustable Quality"
 msgstr "Qualité réglable"
 
+#: common.php:7801
+msgid "Retina Support, use WP Retina 2x for best results"
+msgstr "Support Retina, utilise WP Retina 2x pour de meilleurs résultats."
+
 #: common.php:7799
 msgid "Purchase a subscription for your site."
 msgstr "Acheter un abonnement pour votre site."
@@ -58,6 +114,10 @@ msgstr "Inactive, activez le redimensionnement automatique dans les réglages de
 #: common.php:7394
 msgid "Verified"
 msgstr "Vérifié"
+
+#: common.php:7388
+msgid "Inactive, please disable the Image Performance option on the Jetpack Dashboard."
+msgstr "Inactif, veuillez désactiver l’option Image Performance dans le tableau de bord de Jetpack."
 
 #. translators: %s: admin email as configured in settings
 #: classes/class-ewwwio-tracking.php:343
@@ -146,7 +206,7 @@ msgstr "Pourquoi y a-t-il tant d’images ?"
 
 #: common.php:7680
 msgid "Remove API key"
-msgstr "Supprimer la clé de l’API."
+msgstr "Retirer la clé de l’API."
 
 #: common.php:7845
 msgid "*Settings to disable creation and optimization of individual sizes must be configured for each individual site."
@@ -1492,12 +1552,12 @@ msgstr "Il semble que vous n’avez envoyé aucune image pour l’instant."
 #: bulk.php:113 classes/class-ewww-flag.php:148
 #: classes/class-ewww-nextgen.php:588
 msgid "Choose how long to pause between images (in seconds, 0 = disabled)"
-msgstr "Choisissez la durée de la pause entre les images (en secondes, 0 = désactivé)"
+msgstr "Choisir la durée de pause entre les images (en secondes, 0 = désactivé)"
 
 #: bulk.php:111 classes/class-ewww-flag.php:147
 #: classes/class-ewww-nextgen.php:587
 msgid "Force re-optimize"
-msgstr "Forcer nouvelle optimisation"
+msgstr "Forcer une nouvelle optimisation"
 
 #: bulk.php:86 classes/class-ewww-flag.php:122
 #: classes/class-ewww-nextcellent.php:456 classes/class-ewww-nextgen.php:562
@@ -1633,7 +1693,7 @@ msgstr "Réinitialiser l’état"
 #: bulk.php:157 classes/class-ewww-flag.php:161
 #: classes/class-ewww-nextcellent.php:491 classes/class-ewww-nextgen.php:601
 msgid "If you would like to start over again, press the Reset Status button to reset the bulk operation status."
-msgstr "Si vous souhaitez recommencer, appuyez sur le bouton Réinitialiser l’état pour réinitialiser l’état d’opération en vrac."
+msgstr "Si vous souhaitez recommencer, appuyez sur le bouton « Réinitialiser l’état » pour réinitialiser l’état d’opération en vrac."
 
 #: classes/class-ewwwio-cli.php:96 classes/class-ewwwio-cli.php:156
 msgid "Scanning, this could take a while"

@@ -108,7 +108,6 @@ function fvm_get_generalinfo() {
 ### Function: Format Bytes Into TiB/GiB/MiB/KiB/Bytes
 if(!function_exists('fvm_format_filesize')) {
     function fvm_format_filesize($rawSize) {
-		if(!is_numeric($rawSize)) { return __('unknown', 'fvm-serverinfo'); }
         if($rawSize / 1099511627776 > 1) {
             return number_format_i18n($rawSize/1099511627776, 1).' '.__('TiB', 'fvm-serverinfo');
         } elseif($rawSize / 1073741824 > 1) {
@@ -230,10 +229,10 @@ if(!function_exists('fvm_get_mysql_version')) {
 if(!function_exists('fvm_get_mysql_data_usage')) {
     function fvm_get_mysql_data_usage() {
         global $wpdb;
-        $data_usage = 0;
+        $data_usage = '';
         $tablesstatus = $wpdb->get_results("SHOW TABLE STATUS");
-        foreach($tablesstatus as $tablestatus) {
-			if(is_numeric($tablestatus->Data_length)) { $data_usage += $tablestatus->Data_length; }
+        foreach($tablesstatus as  $tablestatus) {
+            $data_usage += $tablestatus->Data_length;
         }
         if (!$data_usage) {
             $data_usage = __('N/A', 'fvm-serverinfo');
@@ -247,10 +246,10 @@ if(!function_exists('fvm_get_mysql_data_usage')) {
 if(!function_exists('fvm_get_mysql_index_usage')) {
     function fvm_get_mysql_index_usage() {
         global $wpdb;
-        $index_usage = 0;
+        $index_usage = '';
         $tablesstatus = $wpdb->get_results("SHOW TABLE STATUS");
         foreach($tablesstatus as  $tablestatus) {
-            if(is_numeric($tablestatus->Index_length)) { $index_usage +=  $tablestatus->Index_length; }
+            $index_usage +=  $tablestatus->Index_length;
         }
         if (!$index_usage){
             $index_usage = __('N/A', 'fvm-serverinfo');
